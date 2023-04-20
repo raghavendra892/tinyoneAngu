@@ -1,0 +1,42 @@
+<footer class="section footer">
+   <div class="container">
+        <div class="row mb-120">
+            <div class="col-md-10 offset-md-1 text-center">
+                <h2 class="pri-heading ">
+                    Tinyone features
+                </h2>
+                <h3 class="sec-heading">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+                </h3>
+                <form class="form-inline">
+                    <label class="sr-only" for="email">Name</label>
+                    <input type="text" class="form-control email mb-2 mr-sm-2" id="email" placeholder="Enter your email to update">
+                    <button type="submit" class="btn mb-2 pri-button">Submit</button>
+                </form>
+                <app-icons [iconsArray]="iconListArray"></app-icons>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <address class="address">
+                    <p>HALOVIETNAM LTD</p>
+                    <p>66, Dang Van ngu, Dong Da</p>
+                    <p>Hanoi, Vietnam</p>
+                    <p>
+                        <a href="mailto:r@gmail.com">
+                            r@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                        <a href="tel:84435149182">84435149182</a>
+                    </p>
+                </address>
+                
+            </div>
+            <div class="col-md-1 offset-md-1" *ngFor="let fLink of footerLink">
+                <app-icons [ulclassName]="'footerLink1'" [iconsArray]="fLink"></app-icons>
+            </div>
+        </div>
+   </div>
+</footer>

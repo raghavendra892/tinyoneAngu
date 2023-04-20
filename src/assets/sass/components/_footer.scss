@@ -1,0 +1,23 @@
+
+
+
+.footer{
+    background-color: $color-dark;
+    .iconList{
+        
+        li{
+                a{
+                    color: $color-primary
+                }
+        }
+    }
+}
+
+.address{
+    p{
+        margin-bottom: 5px;
+    }
+    p,a{
+        color: $color-white;
+    }
+}
